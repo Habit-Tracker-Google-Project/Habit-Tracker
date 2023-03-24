@@ -123,3 +123,42 @@ body {
     position: absolute;
     background-color: rgba(0,0,0,0.8);
   }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    z-index: 9999;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  nav a:hover {
+    background-color: white;
+    color: #333;
+  }
+  nav a.active {
+    background-color: white;
+    color: #333;
+  }
+    container {
+    padding-top: 80px;
+  }
