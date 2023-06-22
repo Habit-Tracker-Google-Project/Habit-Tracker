@@ -3,48 +3,85 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    width: 800px;
-}
-
-#splits {
+    width: 780px;
+    overflow-x: hidden;
+  }
+  
+  #splits {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     margin: 20px;
     padding: 20px;
-}
-
-#time-table {
+  }
+  
+  #time-table {
     width: 100%;
-}
-
-#time-table th {
+  }
+  
+  #time-table th {
     padding: 10px;
     background-color: #f2f2f2;
     border: 2px solid black;
     border-radius: 5px;
-}
-
-#time-table td {
+  }
+  
+  #time-table td {
     padding: 10px;
     border: 2px solid black;
     border-radius: 5px;
-}
-
-#buttons {
-    margin: 20px;
-    text-align: center;
-}
-
-#buttons button {
-    margin: 10px;
+  }
+  
+  #todolist, #timetracker, #calendarbtn, #statsbtn {
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+    margin: 20px;
+    text-align: center;
+  }
 
-#buttons button:hover {
+  #todolist{
+    margin-left: 15%;
+  }
+  
+  #todolist:hover, #timetracker:hover, #calendarbtn:hover, #statsbtn:hover {
     background-color: #3e8e41;
-}
+  }
+  
+  #stats-section {
+    position: relative;
+    height: 1175px;
+  }
+  
+  #scroll-container {
+    border-style: solid;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-color: rgb(47, 172, 255);
+    background-color:lightskyblue;
+    top: 100px;
+    height: 25px;
+    width: 100%;
+    padding-top: 5px;
+    overflow: hidden;
+    transition-delay: 300s;
+  }
+  
+  #scroll-text {
+    /* animation properties */
+    font-size: 19px;
+    animation: my-animation 20s linear infinite;
+    color: solid black;
+  }
+  
+  @keyframes my-animation {
+    from {
+      transform: translateX(150%);
+    } to {
+      transform: translateX(-150%);
+    }
+  }
